@@ -53,7 +53,7 @@ xml_content = xml_content + "<link>" + url + "</link>" + "\n"
 xml_content = xml_content + "<epub>" + epub_link + "</epub>" + "\n"
 xml_content = xml_content + "<pdf />" + "\n"
 xml_content = xml_content + "<category>" + gen + "</category>" + "\n"
-xml_content = xml_content + "<date />" + "\n" + "<book />" + "\n"
+xml_content = xml_content + "<date />" + "\n" + "</book>" + "\n"
 
 print xml_content
 
