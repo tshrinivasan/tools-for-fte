@@ -40,7 +40,8 @@ gen = gen.encode('utf-8')
 for links in soup.findAll('a', href=True):
 	if "epub" in links['href']:
 		epub_link =  links['href'].encode('utf-8')
-
+	else:
+		epub_link = "XXXXXXXX"
 
 	if "authors" in links['href']:
 		authors = (links.contents[0]).encode('utf-8')
@@ -60,3 +61,5 @@ print xml_content
 
 
 
+if epub_link == "XXXXXXXX":
+	print "\n\n\n Note: Add epub link yourself. Thanks \n\n\n"
